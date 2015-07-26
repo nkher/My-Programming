@@ -1,0 +1,8 @@
+100
+0 2
+/home/gcj/finals
+/home/gcj/quals
+2 1
+/chicken
+/chicken/egg
+/chicken
