@@ -14,7 +14,7 @@ public class PowerN {
 	}
 	
 	/* Power Function with float values */
-	public float powerWithNegative(float x, float y){
+	public static float powerWithNegative(float x, float y){
 		float temp;
 		if(y==0)
 			return 1;
@@ -40,6 +40,8 @@ public class PowerN {
 		int powerValue = scan.nextInt();
 		float answer = obj.power(number, powerValue);
 		System.out.println(answer);
+		
+		System.out.println(powerWithNegative(2.0f, 2.2f));
 	}
 
 }

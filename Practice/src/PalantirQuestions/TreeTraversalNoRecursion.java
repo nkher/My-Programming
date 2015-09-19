@@ -14,6 +14,7 @@ public class TreeTraversalNoRecursion {
 			return (getSize(root.right()) + 1 + getSize(root.left()));
 	}
 	
+	// TC = O(N) and SC = O(H)
 	public static void traverse_inorder(BSTNode root) {
 		Stack<BSTNode> stack = new Stack<BSTNode>();
 		BSTNode current = root;
@@ -66,6 +67,45 @@ public class TreeTraversalNoRecursion {
 		}
 	}
 	
+	public static void traverse_postorder(BSTNode root) {
+		
+		if (root == null) return;
+		
+		Stack<Integer> stack = new Stack<Integer>();
+		Stack<BSTNode> stackBack = new Stack<BSTNode>();
+		
+		BSTNode current = root;
+		
+		while (current != null) {
+			stack.push((Integer) current.value());
+			stackBack.push(current);
+			current = current.right();
+		}
+		
+		while (!stackBack.isEmpty()) {
+			current = stackBack.pop();
+			current = current.left(); // goto left
+			while (current != null) { // find right most node
+				stack.push((Integer) current.value());
+				stackBack.push(current);
+				current = current.right();
+			}
+		}
+		
+		// print the values
+		while (!stack.isEmpty()) {
+			System.out.println(stack.pop());
+		}
+	}
+	
+	public static void postorder(BSTNode root) {
+		if (root != null) {
+			postorder(root.left());
+			postorder(root.right());
+			System.out.print(root.value() + " ");
+		}
+	}
+	
 	
 	public static void main(String[] args) throws InterruptedException {
 		BinarySearchTree<Integer, Integer> bst = new BinarySearchTree<Integer, Integer>();
@@ -88,6 +128,12 @@ public class TreeTraversalNoRecursion {
 		ArrayList<Integer> keyList = new ArrayList<Integer>();
 		bst.getKeysPostOrder(bst.root(), keyList);
 		System.out.println(keyList.toString());
+		
+		System.out.println("\nPost Order : ");
+		postorder(bst.root());
+		
+		System.out.println("\n\nPost order with stack : ");
+		traverse_preorder(bst.root());
 		
 	}
 }

@@ -1,7 +1,5 @@
 package org.DynamicPrograming;
 
-import java.math.BigInteger;
-
 public class Memoization_OverlappingSubProb {
 
 	public static final int NIL = -1;
@@ -30,7 +28,7 @@ public class Memoization_OverlappingSubProb {
 		
 		Memoization_OverlappingSubProb movp = new Memoization_OverlappingSubProb();
 		movp.initialize();
-		System.out.println("Fib of 5 is : " + movp.fibonacci(6));
+		System.out.println("Fib of 5 is : " + movp.fibonacci(8));
 		
 	}
 

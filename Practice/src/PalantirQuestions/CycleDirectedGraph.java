@@ -67,7 +67,6 @@ public class CycleDirectedGraph {
 					//System.out.println("Came here for the termination condition for : " + adjacencyList.get(i).vertexNumber);
 					return true;
 				}
-				
 			}
 		}
 		recursionStack[v.vertexNumber] = false;

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class JosephusProblem {
 
+	// O(n) solution
 	public static int josephus(int n, int k) {
 		if(n == 1) {
 			return 1;

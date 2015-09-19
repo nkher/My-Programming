@@ -2,8 +2,8 @@ package BloombergQuestions;
 
 public class ReverseWords {
 	
+	// Time complexity is O(n) as we spend O(1) per char
 	public static char[] reverseWords(char a[]) {
-		char c;
 		reverseArray(a, 0, a.length-1); // Array 'a' has been reversed
 		// Now reversing each of the word
 		int start = 0;

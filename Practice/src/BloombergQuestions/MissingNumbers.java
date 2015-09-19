@@ -26,7 +26,7 @@ public class MissingNumbers {
 	}
 	
 	public static void main(String[] args) {
-		int array[] = {8,6,4,3,10,9,7,5}; // 1 2 3 4 5 6 7 8 9 10
+		int array[] = {8,6,4,3,10,9,7,1}; // 1 2 3 4 5 6 7 8 9 10
 		MissingNumbers.getMissingNumbers(array, 10);
 	}
 

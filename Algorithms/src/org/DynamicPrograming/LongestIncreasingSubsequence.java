@@ -19,7 +19,7 @@ public class LongestIncreasingSubsequence {
 			for(j=0;j<i;j++) {
 				if((array[i] > array[j]) &&
 					(lis[i] < lis[j] + 1)) {
-					lis[i] = lis[j]+1;
+					lis[i] = lis[j] + 1;
 				}
 			}
 		}

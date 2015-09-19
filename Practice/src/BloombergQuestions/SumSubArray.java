@@ -3,7 +3,7 @@ package BloombergQuestions;
 public class SumSubArray {
 
 	// Find all the sub arrays whose sum is K
-	// 1. Naive solution (Brute Force Approach), T.C --> O(N)
+	// 1. Naive solution (Brute Force Approach), T.C --> O(N^2)
 	public void subArraySumNaive(int a[], int sum) {
 		int start = 0, end = a.length;
 		for (int i=start;i<end;i++) {

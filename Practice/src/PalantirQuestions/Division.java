@@ -23,10 +23,7 @@ public class Division {
 	
 	// only works for power of 2
 	public static int remainderByPower2(int N, int b) {
-		if ((b&1) == 0) {
 			return ( N & (b-1) ); 
-		}	
-		return Integer.MIN_VALUE;
 	}
 	
 	public static int modulus(int N, int b){
@@ -43,8 +40,7 @@ public class Division {
 			number = number & (number-1);
 			count++;
 		}
-		if (count == 1) return true;
-		else return false;
+		return (count == 1);
 	}
 	
 	// Without divide and shift

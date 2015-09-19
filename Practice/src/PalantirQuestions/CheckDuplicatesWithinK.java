@@ -58,7 +58,6 @@ public class CheckDuplicatesWithinK {
 		else
 			System.out.println("Does not contain");
 		
-		TreeSet<Integer> set = new TreeSet<Integer>();
 	}
 
 }

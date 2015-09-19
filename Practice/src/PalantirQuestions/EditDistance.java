@@ -12,6 +12,7 @@ public class EditDistance {
 	// public static final String STRING_Y = "SUNDAY";
 
 	// Method 1 using recursion
+	// T.C = O(3^N)
 	public static int editDistanceRecursion(char X[], char Y[], int m, int n) {
 		
 		// base case

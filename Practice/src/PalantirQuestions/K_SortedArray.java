@@ -15,7 +15,7 @@ public class K_SortedArray {
 			// Move elements of A[0 .. i-1], that are greater than key, to one
 			// position ahead of their current position.
 			// This loop will run at most 'k' times
-			while ( j >= j-k && a[j] > key ) {
+			while ( j >= 0 && a[j] > key ) {
 				a[j+1] = a[j];
 				j = j-1;
 			}

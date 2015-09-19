@@ -49,7 +49,10 @@ public class SearchSortedPivotedArray {
 	}
 	
 	public static void main(String[] args) {
-
+		
+		SearchSortedPivotedArray obj = new SearchSortedPivotedArray();
+		int a[] = { 1, 3, 5, 7, 6, 4, 2 };
+		System.out.println(obj.pivotedBinarySearch(a, a.length, 6));
 	}
 
 }

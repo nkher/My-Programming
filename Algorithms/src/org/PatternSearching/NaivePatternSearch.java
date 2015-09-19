@@ -1,6 +1,11 @@
 package org.PatternSearching;
 import java.util.Scanner;
 
+/* 
+ * Number of comparisons in worst case is O(m*(n-m+1)). 
+ * Although strings which have repeated characters are not likely to appear in English text, 
+ * they may well occur in other applications (for example, in binary texts). The KMP matching algorithm improves the worst case to O(n).
+ * */
 
 public class NaivePatternSearch {
 

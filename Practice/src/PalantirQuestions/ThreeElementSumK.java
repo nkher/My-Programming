@@ -53,16 +53,12 @@ public class ThreeElementSumK {
 	}
 	
 	public static void main(String[] args) {
+		
 		int A[] = {1, 4, 45, 6, 10, 8, 25, 10, 0, 35, -10, -33};
 	    int sum = 0;
 	    
-	    // System.out.println(Arrays.toString(A));
-	    ThreeElementSumK obj = new ThreeElementSumK();
-	    // obj.quicksort(A, 0, A.length-1);
-	    // System.out.println(Arrays.toString(A));
-	    
+	    ThreeElementSumK obj = new ThreeElementSumK();	    
 	    obj.find3NumbersSum(A, sum);
-	    
 	}
 
 }

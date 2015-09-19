@@ -40,6 +40,7 @@ public class Josephus {
 class CircularLinkedList {
 	private Node start;
 	private int count;
+	
 	public void append(int val) {
 		count++;
 		Node newNode = new Node(val);

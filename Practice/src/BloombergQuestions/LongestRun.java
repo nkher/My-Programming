@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class LongestRun {
 
-	// Write a program to accept a non empty string of alpha numberic 
+	// Write a program to accept a non empty string of alpha numeric 
 	// chars. Return the longest run
 	
 	// 1. With a hashmap with extra space

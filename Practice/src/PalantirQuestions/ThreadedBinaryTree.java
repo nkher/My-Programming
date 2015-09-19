@@ -15,7 +15,7 @@ public class ThreadedBinaryTree {
 		while (current != null) {
 			if (current.left == null) {
 				System.out.println(current.data);
-				current = current.right;
+				current = current.right; // we go to the right as the right would be the inorder successor
 			}
 			else {
 				/* Find the in order predecessor of current */ 
